@@ -39,35 +39,42 @@
 
        <form>
 
-        Your name
-        <input type="text" name="name"> 
+            Your name
+            <input type="text" name="name"> 
 
-        Who are we sending this to?
-        <input type="text" name="recipient">
+            Who are we sending this to?
+            <input type="text" name="recipient">
 
-        Choose a melon
-        <select name="melon">
-            <option value="watermelon">Watermelon</option>
-            <option value="canteloupe">Canteloupe</option>
-            <option value="honeydew">Honeydew</option>
-        </select>
+            Choose a melon
+            <select name="melon">
+                <option value="watermelon">Watermelon</option>
+                <option value="canteloupe">Canteloupe</option>
+                <option value="honeydew">Honeydew</option>
+            </select>
 
 
-        When should we deliver?
+            When should we deliver?
+            <input type="radio" name="time" value="am"> 
+            <label>Morning</label>
 
-        Morning
-        Evening
-        Any time
+            <input type="radio" name="time" value="pm"> 
+            <label>Evening</label>
+        
+            <input type="radio" name="time" value="any"> 
+            <label>Any time</label>
 
-        Enter your message:
+            Enter your message:
+            <textarea name="message"></textarea>
 
-        Subscribe to our newsletter
-        Yes
+            Subscribe to our newsletter
+            <input type="checkbox" name="subscribe" value="yes">
+            <label>Yes</label>
 
-    </form>
+            <input type="submit">
+
+        </form>
 
     </body>
-
 
 
 </html>
